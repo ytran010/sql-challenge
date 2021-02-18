@@ -1,0 +1,36 @@
+Employees
+-
+employee_number INT PK
+employee_title_id FK - Titles.title_id
+birth_date VARCHAR(255)
+first_name VARCHAR(255)
+last_name VARCHAR(255)
+sex VARCHAR(255)
+hire_date VARCHAR(255)
+
+Titles
+-
+title_id INT PK
+title VARCHAR(255)
+
+Salaries
+-
+salary INT PK
+employee_number FK - Employees.employee_number
+
+
+Departments
+-
+department_number PK VARCHAR(255)
+department_name VARCHAR(255)
+
+Department_Manager
+-
+department_number FK - Departments.department_number
+employee_number FK - Employees.employee_number
+
+Department_Employee
+-
+department_number FK - Departments.department_number
+employee_number FK - Employees.employee_number
+

@@ -20,7 +20,7 @@ CREATE TABLE employees (
 );
 
 -- Visualize employees table
-SELECT * FROM employees;
+ 
 
 -- Create table for departments.csv
 CREATE TABLE departments (
